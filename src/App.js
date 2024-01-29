@@ -1,17 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import Quote from './Quote/Quote.js'
-
+import Quote from './Quote/Quote.js';
+import {getQuotes} from './Data/data.js';
+import AllQuotes from './AllQuotes/AllQuotes.js'
 
 function App() {
+
   return (
     <div className="App">
-      <h1>
-        Mes citations !
-      </h1>
-      <div className="App">
-        <Quote text="Elementary, my dear Watson" author="Sherlock Holmes"/>
-      </div>
+      <h1>Mes citations !</h1>
+     <AllQuotes quotes={getQuotes()}/>
     </div>
   );
 }
