@@ -1,3 +1,4 @@
+
 function Quote(props) {
     return (
         <>
@@ -7,7 +8,10 @@ function Quote(props) {
             <div>
                 Auteur : {props.author}
             </div>
-        </>);
+        </>
+    );
 }
+
+
 
 export default Quote;
