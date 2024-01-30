@@ -23,3 +23,10 @@ const quotes = [
          
        
         export {getQuotes};
+
+        function getNextQuote(idReference){
+            quotes.filter(e => e.id > idReference).sort()
+
+        }
+
+        
